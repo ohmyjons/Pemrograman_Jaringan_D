@@ -21,8 +21,8 @@ while True:
             print("sending back data")
             connection.sendall(data)
         else:
-            #print >>sys.stderr, 'no more data from', client_address
-            #print(f"no more data from {client_address}")
+            # print >>sys.stderr, 'no more data from', client_address
+            # print(f"no more data from {client_address}")
            break
     # Clean up the connection
     connection.close()
