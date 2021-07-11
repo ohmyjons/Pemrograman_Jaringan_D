@@ -11,7 +11,7 @@ def get_url_list():
     urls['its']='https://www.its.ac.id/wp-content/uploads/2020/07/Lambang-ITS-2-300x300.png'
     urls['sch']='https://www.its.ac.id/news/wp-content/uploads/sites/2/2019/10/home-bar.e1ac3112.png'
     urls['fb']='https://www.facebook.com/images/fb_icon_325x325.png'
-    urls['twt']='https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png'
+    # urls['twt']='https://cdn.cms-twdigitalassets.com/content/dam/help-twitter/twitter_logo_blue.png.twimg.768.png'
     urls['ig']='https://www.instagram.com/static/images/ico/favicon-200.png/ab6eff595bb1.png'
     return urls
 
