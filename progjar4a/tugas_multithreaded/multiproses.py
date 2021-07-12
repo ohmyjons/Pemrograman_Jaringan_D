@@ -8,18 +8,19 @@ def mengunduh():
     # urls = get_url_list()
     catat_awal = datetime.datetime.now()
     fileName = 'pokijan.jpg'
-    for k in range(100):
-        print(f"mendownload GET {[k]}")
+    for n in range(100):
+        print(f"mendownload GET {[n]}")
         waktu = time.time()
         #mengistruksikan eksekusi fungsi download gambar secara multiprocess
-        texec[k] = Process(target=remote_get, args=(fileName,))
-        texec[k].start()
+        texec[n] = Process(target=remote_get, args=(fileName,))
+        texec[n].start()
     #setelah menyelesaikan tugasnya, dikembalikan ke main process dengan join
     for k in range(100):
-        texec[k].join()
+        texec[n].join()
     catat_akhir = datetime.datetime.now()
     selesai = catat_akhir - catat_awal
     print(f"Waktu TOTAL yang dibutuhkan {selesai} detik {catat_awal} s/d {catat_akhir}")
+
 
 #fungsi download_gambar akan dijalankan secara multi process
 if __name__=='__main__':

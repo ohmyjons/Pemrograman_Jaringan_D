@@ -20,6 +20,7 @@ while True:
     print("diterima ", data)
     print("dikirim oleh " , addr)
 
+    # menyimpan gambar uang diterima server
     received_image = 'img' + str(num) + ".jpg"
     num += 1
     file = open(received_image, 'wb')
